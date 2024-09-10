@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+
+
+
+    <style>
+
+box-sizing border-box
+
+
+body{
+  height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+  background-color: #f4f4f4;
+}
+.profile-card{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+max-width: 370px;
+width: 100%;
+background: #fff;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.image{
+  position: relative;
+height: 150px;
+width: 150px;
+border-radius: 50%;
+  background-color: #4070f4;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.image .profile-image{
+height: 146px;
+width: 145px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.profile-card text-data{
+  display: flex;
+flex-direction: column;
+align-items: center;
+  color: #333;
+}
+.text-data .name{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.text-data .job{
+  font-size: 15px;
+  font-weight: 400;
+
+}
+.profile-card .media-buttons{
+  display: flex;
+align-items: center;
+  margin-top: 15px;
+}
+.media-buttons .link{
+display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #4070f4;
+  text-decoration: none;
+  
+}
+
+.profile-card .buttons{
+  display: flex;
+align-items: center;
+margin-top: 25px;
+  
+}
+.buttons .button{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+border-radius: 24px;
+  margin: 0 10px;
+  padding: 8px 24px;
+background-color: #4070f4;
+cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttons .button:hover{
+  background-color: #0e4bf1;
+}
+
+.profile-card::before{
+content: "";
+position: absolute;
+  top: 8;
+left: 0;
+height: 6.5%;
+width: 23.5%;
+  border-radius: 24px 24px 0 0;
+  background-color: #4070f4;
+}
+
+
+        body {
+            position: relative;
+        }
+        p {
+            font-size: 18px;
+        }
+        #Home {
+            padding-top: 50px;
+            height: 500px;
+            color: white;
+            background-color: rgb(11, 9, 146);
+        }
+        #AboutMySelf {
+            padding-top: 50px;
+            height: 500px;
+            color: white;
+            background-color: rgb(2, 17, 43);
+        }
+        #MyHobbies {
+            padding-top: 50px;
+            height: 500px;
+            color: white;
+            background-color: rgb(11, 92, 117);
+        }
+        #MyAimInLife {
+            padding-top: 50px;
+            height: 500px;
+            color: white;
+            background-color: rgb(3, 40, 161);
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Home</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#AboutMySelf">About My Self</a></li>
+                        <li><a href="#MyHobbies">My Hobbies</a></li>
+                        <li><a href="#MyAimInLife">My Aim In Life</a></li>
+                        <li><a href="#MyProfilecard">My Profile Card</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="Home" class="container-fluid">
+        <h1>Home</h1>
+        <h3>This Web Page Is Created With My Information.</h3>        
+    </div>
+    <div id="AboutMySelf" class="container-fluid">
+        <h1>About My Self</h1>
+        <h3>My Name Is Mohammad Ibne Amin. I am 15 years old. I read in class 8.  My father is Aminul Islam Amin. My mother is Selina Amin.
+            <br> I haver 2 elder brother. Amir Hamza and Talha.</h3>
+    </div>
+    <div id="MyHobbies" class="container-fluid">
+        <h1>My Hobbies</h1>
+        <h3>My hobbies is coocking, gardening, painting, crafting, traveling, playing.</h3>       
+    </div>
+    <div id="MyAimInLife" class="container-fluid">
+        <h1>My Aim In Life</h1>
+        <h3>My Aim In Life Is To Be A Web Developer.</h3>
+    </div>
+    <div id="MyProfilecard" class="container-fluid"></div>
+        <div class="profile-card">
+            <div class="image">
+                <img src="D:\pictures\car.jpg" alt="" class="profile-image">
+            </div>
+            <div class="text-data">
+                <span class="name">Mohammad</span>
+                <br> <b> <span class="job">Student And Coder</span></b> </br>
+            </div>
+            <div class="media-buttons">
+                <a href="https://www.youtube.com/@EasyCodingWithMohammad" style="background: #ff0000 " class="link">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+                <a href="https://www.facebook.com/" style="background: #4267b2" class="link">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="" style="background: #e1306c" class="link">
+                    <i class='bx bxl-instagram-alt'></i>
+                </a>
+                <a href="" style="background: #1da1f2" class="link">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                </div>
+                <div class="buttons">
+                <button class="button"> Subcribe </button>
+                <button class="button"> Massage </button>
+                <button type="button" class="btn btn-primary position-relative">
+                Inbox
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+               99+
+              </span>
+              </button>
+        
+            </div>
+    </div>
+</body>
+</html>
